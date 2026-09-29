@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — NICHE · Interior Design & Architecture</title>
+  <meta name="description" content="NICHE is an independent publication dedicated to thoughtful interior design and architecture. Learn about our mission, editorial team, and values.">
+  <meta name="author" content="NICHE Editorial">
+  <link rel="canonical" href="https://www.nichejournal.com/about.html">
+  <meta property="og:title" content="About — NICHE">
+  <meta property="og:description" content="Independent essays and guides on design principles, materials, lighting, and architectural thinking.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.nichejournal.com/about.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&h=630&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1e1e1e;
+      --paper: #faf9f7;
+      --mid: #6b6b6b;
+      --border: #e2e0dc;
+      --accent: #8b7d6b;
+      --accent-light: #f0ece6;
+      --serif: 'Newsreader', Georgia, serif;
+      --sans: 'Inter', -apple-system, Helvetica, sans-serif;
+      --max-width: 1280px;
+      --content-width: 720px;
+    }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-weight: 400;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      padding: 0 1.5rem;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    /* ── Header ── */
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      padding: 1.75rem 0 1.25rem;
+      margin-bottom: 2.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-family: var(--serif);
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      text-decoration: none;
+      line-height: 1.2;
+      display: flex;
+      align-items: baseline;
+      gap: 0.3rem;
+    }
+
+    .logo span {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--mid);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-left: 0.2rem;
+    }
+
+    .main-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem 2.25rem;
+      align-items: center;
+    }
+
+    .main-nav a {
+      font-family: var(--sans);
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--ink);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      transition: color 0.15s;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 0.15rem;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      border-bottom-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .header-tools {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .search-toggle {
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 0.45rem 1.2rem;
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      color: var(--mid);
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      cursor: pointer;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .search-toggle:hover {
+      border-color: var(--accent);
+      color: var(--ink);
+    }
+
+    .search-toggle svg {
+      width: 16px;
+      height: 16px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2;
+    }
+
+    /* ── Search bar ── */
+    .search-bar {
+      display: none;
+      width: 100%;
+      padding: 0.75rem 0 1.25rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2rem;
+    }
+
+    .search-bar.open {
+      display: block;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 1rem 0;
+      font-family: var(--sans);
+      font-size: 1.1rem;
+      border: none;
+      background: transparent;
+      border-bottom: 2px solid var(--border);
+      outline: none;
+      color: var(--ink);
+      transition: border-color 0.2s;
+    }
+
+    .search-bar input:focus {
+      border-bottom-color: var(--accent);
+    }
+
+    .search-bar input::placeholder {
+      color: #b0aea9;
+      font-weight: 300;
+    }
+
+    /* ── About page specific ── */
+    .page-header {
+      max-width: var(--content-width);
+      margin: 0 auto 2rem;
+      text-align: center;
+    }
+
+    .page-header h1 {
+      font-family: var(--serif);
+      font-size: 3.2rem;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+
+    .page-header .subhead {
+      font-family: var(--serif);
+      font-size: 1.25rem;
+      color: #3d3d3d;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .about-content {
+      max-width: var(--content-width);
+      margin: 0 auto 3rem;
+    }
+
+    .about-content p {
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      color: #2c2c2c;
+      line-height: 1.75;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-content h2 {
+      font-family: var(--serif);
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin: 2.5rem 0 1.25rem;
+    }
+
+    .about-content h2:first-of-type {
+      margin-top: 0.5rem;
+    }
+
+    .about-content blockquote {
+      border-left: 3px solid var(--accent);
+      padding-left: 1.5rem;
+      margin: 2rem 0;
+      font-family: var(--serif);
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #3d3d3d;
+      line-height: 1.6;
+    }
+
+    .about-content ul {
+      margin: 0 0 1.5rem 1.5rem;
+    }
+
+    .about-content li {
+      font-family: var(--serif);
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-bottom: 0.5rem;
+      color: #2c2c2c;
+    }
+
+    .about-content a {
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: 1px solid var(--accent);
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .about-content a:hover {
+      color: var(--accent);
+      border-color: var(--ink);
+    }
+
+    .about-image {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-radius: 3px;
+      margin: 2rem 0 1rem;
+      background: var(--accent-light);
+    }
+
+    .about-caption {
+      font-size: 0.8rem;
+      color: var(--mid);
+      margin-bottom: 2rem;
+      letter-spacing: 0.02em;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin: 2rem 0 2.5rem;
+    }
+
+    .team-member {
+      display: flex;
+      gap: 1.25rem;
+      align-items: flex-start;
+    }
+
+    .team-avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: var(--accent-light);
+      flex-shrink: 0;
+    }
+
+    .team-info .name {
+      font-family: var(--sans);
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 0.15rem;
+    }
+
+    .team-info .role {
+      font-size: 0.8rem;
+      color: var(--accent);
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .team-info .bio {
+      font-family: var(--serif);
+      font-size: 0.95rem;
+      color: #4d4d4d;
+      line-height: 1.6;
+    }
+
+    .values-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem 2rem;
+      margin: 1.5rem 0 2rem;
+    }
+
+    .value-item h3 {
+      font-family: var(--sans);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.4rem;
+    }
+
+    .value-item p {
+      font-family: var(--serif);
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #3d3d3d;
+      margin: 0;
+    }
+
+    /* ── Footer ── */
+    .site-footer {
+      border-top: 1px solid var(--border);
+      padding: 2.5rem 0 2rem;
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      color: var(--mid);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .footer-brand {
+      font-family: var(--serif);
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-brand span {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: var(--mid);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-left: 0.3rem;
+    }
+
+    .footer-text {
+      font-size: 0.8rem;
+      line-height: 1.6;
+      max-width: 280px;
+    }
+
+    .footer-col h4 {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink);
+      margin-bottom: 1rem;
+    }
+
+    .footer-col a {
+      display: block;
+      color: var(--mid);
+      text-decoration: none;
+      margin-bottom: 0.6rem;
+      font-size: 0.8rem;
+      transition: color 0.2s;
+    }
+
+    .footer-col a:hover {
+      color: var(--accent);
+    }
+
+    .footer-bottom {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.75rem;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 860px) {
+      .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+      .main-nav {
+        gap: 1rem 1.5rem;
+      }
+      .header-tools {
+        width: 100%;
+        justify-content: flex-end;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .team-grid {
+        grid-template-columns: 1fr;
+      }
+      .values-list {
+        grid-template-columns: 1fr;
+      }
+      .page-header h1 {
+        font-size: 2.4rem;
+      }
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 0 0.75rem;
+      }
+      .main-nav a {
+        font-size: 0.75rem;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .page-header h1 {
+        font-size: 2rem;
+      }
+      .about-content p {
+        font-size: 1rem;
+      }
+    }
+
+    .hidden {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- HEADER -->
+    <header class="site-header">
+      <a href="/" class="logo">Elevated Home Thinking <span></span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="terms.html">Terms Of Privacy</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="cookies.html">Cookies Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li><a href="categories.html">Categories</a></li>
+      </nav>
+      <div class="header-tools">
+        <button class="search-toggle" id="searchToggle" aria-label="Open search">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          Search
+        </button>
+      </div>
+    </header>
+
+    <!-- SEARCH BAR -->
+    <div class="search-bar" id="searchBar">
+      <input type="text" id="searchInput" placeholder="Search articles, topics, materials…" aria-label="Search articles">
+    </div>
+
+    <!-- PAGE CONTENT -->
+    <main>
+      <div class="page-header">
+        <h1>About NICHE</h1>
+        <p class="subhead">Independent essays and practical guides on interior design, architecture, and elevated home thinking.</p>
+      </div>
+
+      <div class="about-content">
+        <p><strong>NICHE</strong> is an independent publication dedicated to thoughtful interior design and architecture. We publish original essays, practical guides, and critical perspectives for people who care about how spaces shape lives.</p>
+
+        <p>Founded in 2021, our mission is simple: to make good design accessible, understandable, and actionable. We believe that thoughtful spaces — whether a studio apartment or a family home — have the power to improve how we live, work, and feel.</p>
+
+        <img class="about-image" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80" alt="A bright, modern interior with natural light and timber details." loading="lazy">
+        <p class="about-caption">A passive house in Oregon, featured in our sustainable design coverage. Photo: Unsplash.</p>
+
+        <h2>Our Approach</h2>
+        <p>We are not a trend site. While we cover contemporary work, our focus is on enduring principles: proportion, light, material honesty, and the way people actually live in spaces. Every article is written by our editorial team or vetted contributors with professional experience in architecture and design.</p>
+
+        <blockquote>“Good design is not about luxury — it's about clarity, comfort, and a deep respect for the people who inhabit a space.”</blockquote>
+
+        <p>We avoid jargon, celebrate craft, and ask hard questions about sustainability and consumption. You won't find clickbait or endless slideshows here. Instead, you'll find long-form essays, room-by-room guides, and interviews that respect your time and intelligence.</p>
+
+        <h2>What We Cover</h2>
+        <ul>
+          <li><strong>Interior Design</strong> — Space planning, colour theory, styling, and the details that make a room work.</li>
+          <li><strong>Architecture</strong> — Residential projects, adaptive reuse, and the ideas shaping the built environment.</li>
+          <li><strong>Materials</strong> — From lime plaster to reclaimed timber, we explore what things are made of and why it matters.</li>
+          <li><strong>Lighting</strong> — Layered lighting strategies, fixture selection, and the science of atmosphere.</li>
+          <li><strong>Sustainable Design</strong> — Passive strategies, low-carbon materials, and homes that tread lightly.</li>
+          <li><strong>Modern Homes</strong> — Tours and analysis of contemporary living spaces around the world.</li>
+        </ul>
+
+        <h2>Editorial Independence</h2>
+        <p>All articles are written by our editorial team. We may occasionally use affiliate links; these never influence our recommendations. We are committed to transparency and accuracy. We do not accept sponsored content that compromises our editorial integrity.</p>
+
+        <h2>Meet the Team</h2>
+        <div class="team-grid">
+          <div class="team-member">
+            <img class="team-avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=144&h=144&fit=crop&crop=face" alt="Portrait of Elena Marsh, Editor-in-Chief." loading="lazy">
+            <div class="team-info">
+              <div class="name">Elena Marsh</div>
+              <div class="role">Editor-in-Chief</div>
+              <div class="bio">Elena is an architecture graduate and former practicing interior designer. She writes about the intersection of material culture, sustainability, and everyday living.</div>
+            </div>
+          </div>
+          <div class="team-member">
+            <img class="team-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=144&h=144&fit=crop&crop=face" alt="Portrait of David Chen, Senior Editor." loading="lazy">
+            <div class="team-info">
+              <div class="name">David Chen</div>
+              <div class="role">Senior Editor</div>
+              <div class="bio">David is a registered architect with a focus on adaptive reuse and brutalist heritage. He leads our architecture coverage and writes about the social life of buildings.</div>
+            </div>
+          </div>
+          <div class="team-member">
+            <img class="team-avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=144&h=144&fit=crop&crop=face" alt="Portrait of Sarah Okonkwo, Materials Editor." loading="lazy">
+            <div class="team-info">
+              <div class="name">Sarah Okonkwo</div>
+              <div class="role">Materials Editor</div>
+              <div class="bio">Sarah is a building scientist and writer. She translates technical material knowledge into practical guidance for designers and homeowners.</div>
+            </div>
+          </div>
+          <div class="team-member">
+            <img class="team-avatar" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=144&h=144&fit=crop&crop=face" alt="Portrait of James Lin, Lighting Editor." loading="lazy">
+            <div class="team-info">
+              <div class="name">James Lin</div>
+              <div class="role">Lighting Editor</div>
+              <div class="bio">James is a lighting designer with over a decade of experience in residential and hospitality projects. He writes our popular lighting guides.</div>
+            </div>
+          </div>
+        </div>
+
+        <h2>Our Values</h2>
+        <div class="values-list">
+          <div class="value-item">
+            <h3>Thoughtfulness</h3>
+            <p>We take time to research, reflect, and write with care. No hot takes, no filler.</p>
+          </div>
+          <div class="value-item">
+            <h3>Accessibility</h3>
+            <p>Good design is for everyone. We explain complex ideas in clear, plain language.</p>
+          </div>
+          <div class="value-item">
+            <h3>Independence</h3>
+            <p>Our editorial decisions are never influenced by advertisers or affiliate partners.</p>
+          </div>
+          <div class="value-item">
+            <h3>Sustainability</h3>
+            <p>We advocate for low-impact materials and design that respects the planet.</p>
+          </div>
+        </div>
+
+        <p style="margin-top: 2rem;">Interested in working with us or have a story to share? Visit our <a href="contact.html">contact page</a> or email <a href="mailto:editors@nichejournal.com">editors@nichejournal.com</a>.</p>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">NICHE <span>Journal</span></div>
+          <p class="footer-text">Independent interior design & architecture publication. Elevated home thinking since 2021.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Sections</h4>
+          <a href="#">Interior Design</a>
+          <a href="#">Architecture</a>
+          <a href="#">Materials</a>
+          <a href="#">Lighting</a>
+          <a href="#">Space Planning</a>
+        </div>
+        <div class="footer-col">
+          <h4>More</h4>
+          <a href="#">Furniture</a>
+          <a href="#">Modern Homes</a>
+          <a href="#">Sustainable Design</a>
+          <a href="#">Guides</a>
+          <a href="#">FAQ</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Use</a>
+          <a href="cookies.html">Cookie Policy</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 NICHE Journal. All rights reserved.</span>
+        <span>Made with care for thoughtful spaces.</span>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // ── Search toggle ──
+    const searchToggle = document.getElementById('searchToggle');
+    const searchBar = document.getElementById('searchBar');
+    const searchInput = document.getElementById('searchInput');
+    searchToggle.addEventListener('click', () => {
+      searchBar.classList.toggle('open');
+      if (searchBar.classList.contains('open')) searchInput.focus();
+    });
+
+    // ── FAQ toggle (kept for consistency, though no FAQ here) ──
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      if (question) {
+        question.addEventListener('click', () => {
+          item.classList.toggle('open');
+        });
+      }
+    });
+
+    // ── JSON-LD schema for AboutPage ──
+    const schema = {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "About NICHE — Interior Design & Architecture",
+      "description": "NICHE is an independent publication dedicated to thoughtful interior design and architecture.",
+      "url": "https://www.nichejournal.com/about.html",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "NICHE Journal",
+        "founder": {
+          "@type": "Person",
+          "name": "Elena Marsh"
+        }
+      }
+    };
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.textContent = JSON.stringify(schema);
+    document.head.appendChild(script);
+  </script>
+</body>
+</html>

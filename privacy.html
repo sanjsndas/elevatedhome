@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy · NICHE — Interior Design & Architecture</title>
+  <meta name="description" content="NICHE Journal privacy policy: how we collect, use, and protect your personal information when you visit our site or contact us.">
+  <meta name="author" content="NICHE Editorial">
+  <link rel="canonical" href="https://www.nichejournal.com/privacy.html">
+  <meta property="og:title" content="Privacy Policy · NICHE — Interior Design & Architecture">
+  <meta property="og:description" content="NICHE Journal privacy policy: how we collect, use, and protect your personal information when you visit our site or contact us.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.nichejournal.com/privacy.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&h=630&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1e1e1e;
+      --paper: #faf9f7;
+      --mid: #6b6b6b;
+      --border: #e2e0dc;
+      --accent: #8b7d6b;
+      --accent-light: #f0ece6;
+      --serif: 'Newsreader', Georgia, serif;
+      --sans: 'Inter', -apple-system, Helvetica, sans-serif;
+      --max-width: 1280px;
+      --content-width: 720px;
+    }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-weight: 400;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      padding: 0 1.5rem;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    /* ── Header ── */
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      padding: 1.75rem 0 1.25rem;
+      margin-bottom: 2.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-family: var(--serif);
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      text-decoration: none;
+      line-height: 1.2;
+      display: flex;
+      align-items: baseline;
+      gap: 0.3rem;
+    }
+
+    .logo span {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--mid);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-left: 0.2rem;
+    }
+
+    .main-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem 2.25rem;
+      align-items: center;
+    }
+
+    .main-nav a {
+      font-family: var(--sans);
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--ink);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      transition: color 0.15s;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 0.15rem;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      border-bottom-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .header-tools {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .search-toggle {
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 0.45rem 1.2rem;
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      color: var(--mid);
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      cursor: pointer;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .search-toggle:hover {
+      border-color: var(--accent);
+      color: var(--ink);
+    }
+
+    .search-toggle svg {
+      width: 16px;
+      height: 16px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2;
+    }
+
+    /* ── Privacy content ── */
+    .privacy-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .privacy-header h1 {
+      font-family: var(--serif);
+      font-size: 3.2rem;
+      font-weight: 600;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+
+    .privacy-header p {
+      font-family: var(--serif);
+      font-size: 1.2rem;
+      color: #4d4d4d;
+      max-width: 680px;
+      margin: 0 auto 0.5rem;
+      line-height: 1.6;
+    }
+
+    .privacy-header .last-updated {
+      font-family: var(--sans);
+      font-size: 0.85rem;
+      color: var(--mid);
+      letter-spacing: 0.02em;
+      margin-top: 1rem;
+    }
+
+    .privacy-content {
+      max-width: var(--content-width);
+      margin: 0 auto 4rem;
+      background: #ffffff;
+      padding: 3rem 3rem 2.5rem;
+      border-radius: 3px;
+      border: 1px solid var(--border);
+    }
+
+    .privacy-content h2 {
+      font-family: var(--serif);
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin: 2.5rem 0 1rem;
+      letter-spacing: -0.01em;
+      line-height: 1.3;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.5rem;
+    }
+
+    .privacy-content h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .privacy-content h3 {
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      margin: 1.8rem 0 0.8rem;
+    }
+
+    .privacy-content p {
+      font-family: var(--serif);
+      font-size: 1.05rem;
+      color: #2d2d2d;
+      line-height: 1.7;
+      margin-bottom: 1.2rem;
+    }
+
+    .privacy-content ul,
+    .privacy-content ol {
+      margin: 0 0 1.5rem 1.5rem;
+      font-family: var(--serif);
+      font-size: 1.05rem;
+      color: #2d2d2d;
+      line-height: 1.7;
+    }
+
+    .privacy-content li {
+      margin-bottom: 0.5rem;
+    }
+
+    .privacy-content a {
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: 1px solid var(--accent);
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .privacy-content a:hover {
+      color: var(--accent);
+      border-color: var(--ink);
+    }
+
+    .privacy-content .highlight-box {
+      background: var(--accent-light);
+      padding: 1.5rem 1.8rem;
+      border-radius: 2px;
+      margin: 2rem 0;
+      font-size: 1rem;
+      border-left: 4px solid var(--accent);
+    }
+
+    .privacy-content .highlight-box p {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+
+    .privacy-content .highlight-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ── Footer ── */
+    .site-footer {
+      border-top: 1px solid var(--border);
+      padding: 2.5rem 0 2rem;
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      color: var(--mid);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .footer-brand {
+      font-family: var(--serif);
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-brand span {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: var(--mid);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-left: 0.3rem;
+    }
+
+    .footer-text {
+      font-size: 0.8rem;
+      line-height: 1.6;
+      max-width: 280px;
+    }
+
+    .footer-col h4 {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink);
+      margin-bottom: 1rem;
+    }
+
+    .footer-col a {
+      display: block;
+      color: var(--mid);
+      text-decoration: none;
+      margin-bottom: 0.6rem;
+      font-size: 0.8rem;
+      transition: color 0.2s;
+    }
+
+    .footer-col a:hover {
+      color: var(--accent);
+    }
+
+    .footer-bottom {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.75rem;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 1024px) {
+      .privacy-header h1 {
+        font-size: 2.6rem;
+      }
+      .privacy-content {
+        padding: 2.5rem 2rem;
+      }
+    }
+
+    @media (max-width: 860px) {
+      .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+      .main-nav {
+        gap: 1rem 1.5rem;
+      }
+      .header-tools {
+        width: 100%;
+        justify-content: flex-end;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .privacy-content {
+        padding: 2rem 1.5rem;
+      }
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 0 0.75rem;
+      }
+      .privacy-header h1 {
+        font-size: 2rem;
+      }
+      .privacy-content {
+        padding: 1.5rem 1.25rem;
+      }
+      .privacy-content h2 {
+        font-size: 1.5rem;
+      }
+      .main-nav a {
+        font-size: 0.75rem;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- HEADER -->
+    <header class="site-header">
+      <a href="/" class="logo">Elevated Home Thinking <span></span></a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Terms Of Privacy</a>
+        <a href="privacy.html" class="active">Privacy Policy</a>
+        <a href="cookies.html">Cookies Policy</a>
+        <a href="disclaimer.html">Disclaimer</a>
+        <a href="categories.html">Categories</a>
+      </nav>
+      <div class="header-tools">
+        <button class="search-toggle" id="searchToggle" aria-label="Open search">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          Search
+        </button>
+      </div>
+    </header>
+
+    <!-- PRIVACY HERO -->
+    <div class="privacy-header">
+      <h1>Privacy Policy</h1>
+      <p>We respect your privacy and are committed to protecting your personal data. This policy explains what we collect, why we collect it, and how we keep it safe.</p>
+      <div class="last-updated">Last updated: 15 March 2025</div>
+    </div>
+
+    <!-- PRIVACY CONTENT -->
+    <div class="privacy-content">
+      <p>This Privacy Policy describes how NICHE Journal (“we”, “us”, or “our”) collects, uses, and shares information about you when you visit <a href="https://www.nichejournal.com">www.nichejournal.com</a> (the “Site”) or interact with us through email, social media, or our contact forms. By using the Site, you agree to the practices described here.</p>
+
+      <div class="highlight-box">
+        <p><strong>In short:</strong> We collect only what we need to run our editorial site, respond to your messages, and understand how readers use our content. We never sell your personal data.</p>
+      </div>
+
+      <h2>1. Information we collect</h2>
+      <p>We may collect the following categories of information:</p>
+      <ul>
+        <li><strong>Information you provide directly:</strong> When you fill out our contact form, subscribe to a newsletter, or email us, we collect your name, email address, and any other details you choose to share (such as the content of your message).</li>
+        <li><strong>Information collected automatically:</strong> Like most websites, we use cookies and similar technologies to collect technical data such as your IP address, browser type, device information, referring URLs, and pages viewed. This helps us understand how readers navigate the site and improve our content.</li>
+        <li><strong>Information from third parties:</strong> We may receive limited data from analytics providers (e.g., aggregated traffic statistics) or social media platforms if you interact with our content there. We do not purchase personal data from data brokers.</li>
+      </ul>
+
+      <h2>2. How we use your information</h2>
+      <p>We use the information we collect for the following purposes:</p>
+      <ul>
+        <li>To respond to your enquiries, story pitches, and reader questions.</li>
+        <li>To send you editorial newsletters or updates if you have opted in (you can unsubscribe at any time).</li>
+        <li>To analyse site traffic, trends, and reader engagement so we can improve our articles and user experience.</li>
+        <li>To maintain the security and integrity of the Site, including detecting and preventing fraud or abuse.</li>
+        <li>To comply with legal obligations and enforce our terms of use.</li>
+      </ul>
+
+      <h2>3. Legal basis for processing (GDPR)</h2>
+      <p>If you are located in the European Economic Area (EEA) or the UK, we process your personal data based on the following legal grounds:</p>
+      <ul>
+        <li><strong>Consent:</strong> Where you have given us clear consent (e.g., subscribing to a newsletter or submitting a contact form).</li>
+        <li><strong>Legitimate interests:</strong> To operate and improve our editorial site, respond to enquiries, and ensure security — always balanced against your rights.</li>
+        <li><strong>Legal obligation:</strong> Where we need to comply with applicable laws or regulations.</li>
+      </ul>
+
+      <h2>4. Cookies and tracking</h2>
+      <p>We use cookies and similar tracking technologies to enhance your browsing experience. These include:</p>
+      <ul>
+        <li><strong>Essential cookies:</strong> Necessary for the Site to function properly (e.g., security, load balancing).</li>
+        <li><strong>Analytics cookies:</strong> Help us understand how visitors interact with the Site (e.g., Google Analytics). These collect aggregated, anonymised data.</li>
+        <li><strong>Preference cookies:</strong> Remember your settings and choices to personalise your experience.</li>
+      </ul>
+      <p>You can control or disable cookies through your browser settings. For more details, please see our <a href="cookies.html">Cookies Policy</a>.</p>
+
+      <h2>5. Sharing your information</h2>
+      <p>We do not sell, rent, or trade your personal data. We may share information only in the following limited circumstances:</p>
+      <ul>
+        <li><strong>Service providers:</strong> Trusted third parties who help us operate the Site (e.g., email delivery services, analytics providers, hosting providers). They are contractually bound to protect your data and may only use it for the services they provide to us.</li>
+        <li><strong>Legal requirements:</strong> If required by law, court order, or governmental authority, or to protect the rights, property, or safety of NICHE Journal, our readers, or others.</li>
+        <li><strong>Business transfers:</strong> In the unlikely event of a merger, acquisition, or sale of assets, your data may be transferred as part of that transaction. We will notify you via email or a prominent notice on the Site before your data is transferred and becomes subject to a different privacy policy.</li>
+      </ul>
+
+      <h2>6. Data retention</h2>
+      <p>We retain your personal data only for as long as necessary to fulfil the purposes described in this policy. For example:</p>
+      <ul>
+        <li>Contact form submissions are kept for up to 24 months to allow us to follow up and maintain editorial records.</li>
+        <li>Newsletter subscription data is retained until you unsubscribe or request deletion.</li>
+        <li>Analytics data is typically retained in an aggregated, anonymised form and does not identify you personally.</li>
+      </ul>
+
+      <h2>7. Your rights</h2>
+      <p>Depending on your location, you may have the following rights regarding your personal data:</p>
+      <ul>
+        <li><strong>Access:</strong> Request a copy of the personal data we hold about you.</li>
+        <li><strong>Correction:</strong> Ask us to correct any inaccurate or incomplete information.</li>
+        <li><strong>Deletion:</strong> Request that we delete your personal data, subject to certain legal exceptions.</li>
+        <li><strong>Restriction:</strong> Ask us to limit how we use your data.</li>
+        <li><strong>Portability:</strong> Request that we transfer your data to another organisation in a machine-readable format.</li>
+        <li><strong>Objection:</strong> Object to our processing of your data based on legitimate interests.</li>
+        <li><strong>Withdraw consent:</strong> Where we rely on consent, you may withdraw it at any time.</li>
+      </ul>
+      <p>To exercise any of these rights, please contact us at <a href="mailto:privacy@nichejournal.com">privacy@nichejournal.com</a>. We will respond within 30 days.</p>
+
+      <h2>8. International data transfers</h2>
+      <p>Our servers and service providers may be located outside your country of residence, including in the United States. When we transfer personal data internationally, we take steps to ensure it receives adequate protection, such as using standard contractual clauses approved by the European Commission or relying on Privacy Shield frameworks where applicable.</p>
+
+      <h2>9. Security</h2>
+      <p>We implement appropriate technical and organisational measures to protect your personal data against unauthorised access, alteration, disclosure, or destruction. These include encrypted connections (HTTPS), access controls, and regular security reviews. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.</p>
+
+      <h2>10. Children’s privacy</h2>
+      <p>NICHE Journal is not directed at children under 16. We do not knowingly collect personal data from children. If you believe we have inadvertently collected information from a child, please contact us so we can delete it promptly.</p>
+
+      <h2>11. Changes to this policy</h2>
+      <p>We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. When we make material changes, we will notify you by posting a prominent notice on the Site or, where appropriate, by email. We encourage you to review this page periodically.</p>
+
+      <h2>12. Contact us</h2>
+      <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your personal data, please contact:</p>
+      <p><strong>NICHE Journal — Privacy Team</strong><br>
+      Email: <a href="mailto:privacy@nichejournal.com">privacy@nichejournal.com</a><br>
+      Postal: NICHE Journal, Editorial Office, 84 Marlowe Street, London EC1V 9PR, United Kingdom</p>
+      <p>You also have the right to lodge a complaint with your local data protection authority (e.g., the ICO in the UK).</p>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">NICHE <span>Journal</span></div>
+          <p class="footer-text">Independent interior design & architecture publication. Elevated home thinking since 2021.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Sections</h4>
+          <a href="#">Interior Design</a>
+          <a href="#">Architecture</a>
+          <a href="#">Materials</a>
+          <a href="#">Lighting</a>
+          <a href="#">Space Planning</a>
+        </div>
+        <div class="footer-col">
+          <h4>More</h4>
+          <a href="#">Furniture</a>
+          <a href="#">Modern Homes</a>
+          <a href="#">Sustainable Design</a>
+          <a href="#">Guides</a>
+          <a href="#">FAQ</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Use</a>
+          <a href="cookies.html">Cookie Policy</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 NICHE Journal. All rights reserved.</span>
+        <span>Made with care for thoughtful spaces.</span>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // ── Search toggle (placeholder behaviour) ──
+    const searchToggle = document.getElementById('searchToggle');
+    if (searchToggle) {
+      searchToggle.addEventListener('click', () => {
+        alert('Search functionality is not available on this demo privacy page.');
+      });
+    }
+
+    // ── Schema markup for privacy page ──
+    const privacySchema = {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Privacy Policy - NICHE Journal",
+      "description": "NICHE Journal privacy policy: how we collect, use, and protect your personal information.",
+      "url": "https://www.nichejournal.com/privacy.html",
+      "about": {
+        "@type": "Thing",
+        "name": "Privacy Policy"
+      }
+    };
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.textContent = JSON.stringify(privacySchema);
+    document.head.appendChild(script);
+  </script>
+</body>
+</html>
